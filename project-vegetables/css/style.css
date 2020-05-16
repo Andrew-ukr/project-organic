@@ -482,6 +482,9 @@ h6 {
 .logo__link {
   font-size: 30px;
   position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .logo__link::before {
@@ -498,6 +501,14 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.logo__link:hover,
+.logo__link:focus {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-shadow: 0 0 20px #81ba00;
 }
 
 .nav-bar {
@@ -587,19 +598,31 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 85px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-bar__cart .nav-bar__cart-svg {
   fill: #333333;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-bar__cart:hover .nav-bar__cart-svg,
 .nav-bar__cart:focus .nav-bar__cart-svg {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   fill: #81ba00;
 }
 
 .nav-bar__cart:hover .nav-bar__cart-sum,
 .nav-bar__cart:focus .nav-bar__cart-sum {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   color: #81ba00;
 }
 
@@ -613,18 +636,30 @@ h6 {
   font-size: 15px;
   font-weight: 500;
   line-height: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-bar__icon-menu {
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-bar__icon-menu svg {
   fill: #333333;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav-bar__icon-menu:hover svg,
 .nav-bar__icon-menu:focus svg {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   fill: #81ba00;
 }
 
