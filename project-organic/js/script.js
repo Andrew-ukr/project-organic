@@ -27,6 +27,14 @@ $(document).ready(function(){
         navSpeed: 2000,
         navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"]
     });
+
+    $('.goods-carousel').owlCarousel({
+        items: 6,
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true
+    });
 });; // скрипт самої каруселі в заголовку
 // alert('Hello');; // тестова сторінка підключення @@include
 // Оприділяє чи веб браузер підтримує формат зображення WEBP
@@ -44,6 +52,21 @@ testWebP(function (support) {
         document.querySelector('body').classList.add('no-webp');
     }
 });; // Оприділяє чи веб браузер підтримує формат зображення WEBP
+function openGoods(evt, goodsName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(goodsName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();; // таб на секцію з продуктами
 
 
 
