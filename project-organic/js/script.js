@@ -35,6 +35,14 @@ $(document).ready(function(){
         nav: false,
         dots: true
     });
+
+    $('.organic-goods-carousel').owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true
+    });
 });; // скрипт самої каруселі в заголовку
 // alert('Hello');; // тестова сторінка підключення @@include
 // Оприділяє чи веб браузер підтримує формат зображення WEBP
@@ -67,6 +75,22 @@ function openGoods(evt, goodsName) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();; // таб на секцію з продуктами
+function openItem(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent1");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks1");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen1").click();; // таб на секцію з продуктами
 
 
 
