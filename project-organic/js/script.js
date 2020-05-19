@@ -43,6 +43,32 @@ $(document).ready(function(){
         nav: false,
         dots: true
     });
+
+    $('.deals__carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: true
+    });
+
+    $('.real-foods-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"]
+    });
+    
+    $('.testemonials-carousel').owlCarousel({
+        items: 2,
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"]
+    });
 });; // скрипт самої каруселі в заголовку
 // alert('Hello');; // тестова сторінка підключення @@include
 // Оприділяє чи веб браузер підтримує формат зображення WEBP
