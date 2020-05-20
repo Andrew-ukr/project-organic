@@ -1687,7 +1687,7 @@ html {
   max-width: 200px;
   width: 100%;
   border-bottom: 2px solid #81ba00;
-  padding-bottom: 0 10px 10px;
+  padding-bottom: 10px;
 }
 
 .deals__text-form-img img {
