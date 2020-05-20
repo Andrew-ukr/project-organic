@@ -33,6 +33,8 @@ $(document).ready(function(){
         loop: true,
         margin: 0,
         nav: false,
+        autoplaySpeed: 2000,
+        navSpeed: 2000,
         dots: true
     });
 
@@ -41,6 +43,8 @@ $(document).ready(function(){
         loop: true,
         margin: 0,
         nav: false,
+        autoplaySpeed: 2000,
+        navSpeed: 2000,
         dots: true
     });
 
@@ -49,6 +53,8 @@ $(document).ready(function(){
         loop: true,
         margin: 30,
         nav: false,
+        autoplaySpeed: 2000,
+        navSpeed: 2000,
         dots: true
     });
 
@@ -57,6 +63,8 @@ $(document).ready(function(){
         loop: true,
         margin: 10,
         nav: true,
+        autoplaySpeed: 2000,
+        navSpeed: 2000,
         dots: false,
         navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"]
     });
@@ -66,6 +74,8 @@ $(document).ready(function(){
         loop: true,
         margin: 10,
         nav: true,
+        autoplaySpeed: 2000,
+        navSpeed: 2000,
         dots: false,
         navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"]
     });

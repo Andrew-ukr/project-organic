@@ -2241,6 +2241,9 @@ html {
   bottom: 35px;
   z-index: 3;
   right: 119px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .big-card.green::after {
@@ -2301,6 +2304,9 @@ html {
   padding: 30px;
   position: relative;
   z-index: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .big-card.green .big-card__frame h3 {
@@ -2348,6 +2354,9 @@ html {
   position: absolute;
   bottom: -24px;
   left: 30px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .big-card.orange {
