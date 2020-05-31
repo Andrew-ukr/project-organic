@@ -50,6 +50,7 @@ $(document).ready(function(){
         nav: false,
         autoplaySpeed: 2000,
         navSpeed: 2000,
+        dotsSpeed: 500,
         dots: true,
         responsiveClass:true,
         responsive:{
@@ -64,6 +65,9 @@ $(document).ready(function(){
                 items:4,
             },
             1326:{
+                items:5,
+            },
+            1700:{
                 items:6,
             }
         }
@@ -76,6 +80,7 @@ $(document).ready(function(){
         nav: false,
         autoplaySpeed: 2000,
         navSpeed: 2000,
+        dotsSpeed: 500,
         dots: true
     });
 
@@ -86,6 +91,7 @@ $(document).ready(function(){
         nav: false,
         autoplaySpeed: 2000,
         navSpeed: 2000,
+        dotsSpeed: 2000,
         dots: true
     });
 
