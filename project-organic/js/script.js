@@ -97,7 +97,8 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         navSpeed: 2000,
         dots: false,
-        navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"]
+        navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"],
+        responsiveClass:true
     });
     
     $('.testemonials-carousel').owlCarousel({

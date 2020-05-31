@@ -1061,7 +1061,7 @@ body.lock {
 .header::after {
   content: "";
   position: absolute;
-  bottom: -1px;
+  bottom: 0;
   left: 0;
   right: 0;
   z-index: 1;
@@ -1277,7 +1277,7 @@ body.lock {
 
 .advantage__title {
   position: relative;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 300;
   line-height: 1;
   margin-bottom: 15px;
@@ -3056,6 +3056,7 @@ body.lock {
       -ms-transform: translateY(20px);
           transform: translateY(20px);
   position: relative;
+  text-align: center;
 }
 
 .article-card__text-block:before {
@@ -3064,7 +3065,10 @@ body.lock {
   width: 25px;
   height: 2px;
   background-color: #eeeeee;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 50%;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -3608,6 +3612,17 @@ body.lock {
     margin-bottom: 0;
   }
 
+  .article-card__text-block {
+    text-align: unset;
+  }
+
+  .article-card__text-block:before {
+    left: 0;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+
   .footer-copy {
     padding: 30px 0 55px;
   }
@@ -3695,6 +3710,36 @@ body.lock {
 
   .our-farm__text {
     font-size: 16px;
+  }
+
+  .real-foods {
+    padding-bottom: 110px;
+  }
+
+  .small-carousel-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .small-carousel:nth-child(3) {
+    display: none;
+  }
+
+  .small-carousel + .small-carousel {
+    margin-left: 30px;
+    margin-top: 0px;
   }
 
   .subscribe {
@@ -3861,30 +3906,14 @@ body.lock {
     display: block;
   }
 
-  .real-foods {
-    padding-bottom: 110px;
-  }
-
   .small-carousel-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-bottom: 30px;
   }
 
-  .small-carousel + .small-carousel {
-    margin-left: 30px;
-    margin-top: 0px;
+  .small-carousel:nth-child(3) {
+    display: block;
   }
 
   .real-food__big-card {
