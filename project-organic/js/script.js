@@ -25,7 +25,22 @@ $(document).ready(function(){
         dots: false,
         autoplaySpeed: 2000,
         navSpeed: 2000,
-        navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"]
+        navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"],
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            768:{
+                items:1,
+                nav:false
+            },
+            1000:{
+                items:1,
+                nav:true,
+            }
+        }
     });
 
     $('.goods-carousel').owlCarousel({
@@ -35,7 +50,23 @@ $(document).ready(function(){
         nav: false,
         autoplaySpeed: 2000,
         navSpeed: 2000,
-        dots: true
+        dots: true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+
+            },
+            768:{
+                items:3
+            },
+            1024:{
+                items:4,
+            },
+            1326:{
+                items:6,
+            }
+        }
     });
 
     $('.organic-goods-carousel').owlCarousel({
@@ -72,12 +103,21 @@ $(document).ready(function(){
     $('.testemonials-carousel').owlCarousel({
         items: 2,
         loop: true,
-        margin: 10,
+        margin: 0,
         nav: true,
         autoplaySpeed: 2000,
         navSpeed: 2000,
         dots: false,
-        navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"]
+        navText: ["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>"],
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            768:{
+                items:2
+            }
+        }
     });
 });; // скрипт самої каруселі в заголовку
 // alert('Hello');; // тестова сторінка підключення @@include
@@ -127,6 +167,12 @@ function openItem(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen1").click();; // таб на секцію з продуктами
+$(document).ready(function() {
+  $('.nav-bar__icon-menu').click(function(event) {
+    $('.nav-bar__menu, .nav-bar__item a').toggleClass('active');
+    $('body').toggleClass('lock');    
+  });
+});; // випадаюче меню
 
 
 
